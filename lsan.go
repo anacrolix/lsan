@@ -21,7 +21,7 @@ package lsan
 // }
 import "C"
 
-func LsanDoLeakCheck() {
+func DoLeakCheck() {
 	// Apparently this should only be called once per process run.
 	C.__lsan_do_leak_check()
 }
